@@ -41,10 +41,8 @@
         <ul class="navbar-nav ms-auto">
           <li class="nav-item"><a class="nav-link" href="kukaolen.html">Kuka olen</a></li>
           <li class="nav-item"><a class="nav-link" href="historia.html">Koulutus / työhistoria</a></li>
-          <li class="nav-item"><a class="nav-link" href="terveyssivusto.php">Terveyssivusto</a></li>
           <li class="nav-item"><a class="nav-link" href="taidot.html">Taidot / kiinnostuksen kohteet</a></li>
-          <li class="nav-item"><a class="nav-link" href="tietovisa.php">Tietovisa</a></li>
-          <li class="nav-item"><a class="nav-link" href="tyonaytteet.html">Työnäytteet</a></li>
+          <li class="nav-item"><a class="nav-link" href="tyonaytteet.html">Projektit</a></li>
           <li class="nav-item"><a class="nav-link" href="yhteydenotto.php">Ota yhteyttä</a></li>
         </ul>
       </div>
@@ -100,7 +98,7 @@
 
 <!-- LOMAKE -->
 <main class="container my-5 pt-hero-gap">
-  <div class="neu-box mx-auto" style="max-width: 600px;">
+  <div class="neu-box text-center h-100 project-card project-purple">
     <h2 class="text-center mb-4">Yhteydenottolomake</h2>
 
     
