@@ -41,10 +41,8 @@
         <ul class="navbar-nav ms-auto">
           <li class="nav-item"><a class="nav-link" href="kukaolen.html">Kuka olen</a></li>
           <li class="nav-item"><a class="nav-link" href="historia.html">Koulutus / työhistoria</a></li>
-          <li class="nav-item"><a class="nav-link" href="terveyssivusto.php">Terveyssivusto</a></li>
           <li class="nav-item"><a class="nav-link" href="taidot.html">Taidot / kiinnostuksen kohteet</a></li>
-          <li class="nav-item"><a class="nav-link" href="tietovisa.php">Tietovisa</a></li>
-          <li class="nav-item"><a class="nav-link" href="tyonaytteet.html">Työnäytteet</a></li>
+          <li class="nav-item"><a class="nav-link" href="tyonaytteet.html">Projektit</a></li>
           <li class="nav-item"><a class="nav-link" href="yhteydenotto.php">Ota yhteyttä</a></li>
         </ul>
       </div>
@@ -54,7 +52,7 @@
   <!-- Hero-sisältö -->
   <div class="hero-content text-center d-flex flex-column justify-content-center align-items-center">
     <div class="container">
-      <h1 class="hero-title">Työnäytteitä</h1>
+      <h1 class="hero-title">Projektit</h1>
     </div>
   </div>
 </header>
@@ -65,14 +63,15 @@
     
 <!-- kävijälaskuri -->
 <div class="col-md-4">
-  <div class="neu-box text-center h-100 ">
+  <div class="neu-box text-center h-100 project-card project-purple">
     <div>
       <h4>Kävijälaskuri</h4>
-      <p>Raspberry Pi -pohjainen laskentajärjestelmä + mobiilisovellus.</p>
+      <p>Raspberry Pi -pohjainen laskentajärjestelmä + mobiilisovellus.</p><br>
+      <img src="laskuri.webp" class="d-block w-100 rounded lajikuva" alt="Kuva4">
     </div>
     <br>
     <!-- Painikkeet -->
-    <div class="mt-3">
+    <div class="button-group">
       <a href="#popup-ravintola" class="btn">Lue lisää</a>
     </div>
   </div>
@@ -81,7 +80,7 @@
 <!-- avautuva teksti -->
 <div id="popup-ravintola" class="overlay">
   <div class="overlay-content neu-box">
-    <a href="#" class="close-btn">&times;</a>
+    <a href="#" class="btn">&times;</a>
     <h3>RavintolaLaskuri</h3>
     <p>
       Raspberry Pi 5 -pohjainen kävijälaskentajärjestelmä, jota olen suunnitellut ravintolaympäristöön (soveltuu toki moneen muuhunkin ympäristöön),
@@ -112,14 +111,15 @@
 
 <!-- budjettiapp -->
 <div class="col-md-4">
-  <div class="neu-box text-center h-100 ">
+  <div class="neu-box text-center h-100 project-card project-blue">
     <div>
-      <h4>Budjetti App</h4>
-      <p>Android sovellus, budjettien seurantaan.</p><br>
+      <h4>ArkiFlow</h4>
+      <p>Android-sovellus henkilökohtaiseen ja jaettuun taloudenhallintaan.</p><br>
+      <img src="arkiflow.webp" class="d-block w-100 rounded lajikuva" alt="Kuva4">
     </div>
     <br>
     <!-- Painikkeet -->
-    <div class="mt-3">
+    <div class="button-group">
       <a href="#popup-budjettiapp" class="btn">Lue lisää</a>
     </div>
   </div>
@@ -131,7 +131,7 @@
     <a href="#" class="btn">&times;</a>
     <h3>Budjettiapp</h3>
     <p>
-      Menojen/tulojen seuranta, mahdollisuus luoda ryhmiä, jossa tiedot näkyvät ryhmän jäsenien kesken. Lisäksi kauppalistojen luonti (myös ryhmien kesken), jotka tallentuvat suoraan kuluihin.
+      Sovelluksessa voi seurata menoja ja tuloja, hallita kategorioita, luoda ryhmiä, sekä jakaa ostoslistoja ja kulutietoja reaaliaikaisesti. Toteutettu React Nativella ja Firebase-palveluilla.
     </p>
   </div>
 </div>
@@ -140,22 +140,72 @@
 
 
 
+<!-- nettikauppa  -->
+<div class="col-md-4">
+  <div class="neu-box text-center h-100 project-card project-green">
+    <div>
+      <h4>Nettikauppa</h4>
+      <p>Verkkokauppajärjestelmä (PHP, MySQL, JavaScript)</p> <br>
+    <img src="nettikauppa.webp" class="d-block w-100 rounded lajikuva" alt="Kuva4">
+    </div>
+    <br>
+    <!-- Painikkeet -->
+    <div class="button-group">
+      <a href="#popup-tyhja2" class="btn">Lue lisää</a>
+     <a href="../verkkokauppa/index.php" class="btn" target="_blank">
+    Avaa nettikauppa
+</a>
+
+    </div>
+  </div>
+</div>
+
+<!-- avautuva teksti -->
+<div id="popup-tyhja2" class="overlay">
+  <div class="overlay-content neu-box">
+    <a href="#" class="btn">&times;</a>
+    <h3>Nettikauppa</h3>
+    <p>Toteutin verkkokauppajärjestelmän PHP:llä ja MySQL-tietokannalla. Sovellus sisältää käyttäjähallinnan, ostoskorin, kassatoiminnon sekä erillisen admin-näkymän tilausten ja tuotteiden hallintaan.
+
+Järjestelmässä on käyttöoikeusmalli (käyttäjä / admin), AJAX-pohjainen ostoskori ilman sivun uudelleenlatauksia sekä tilausprosessi, joka tallennetaan tietokantaan. Admin-näkymässä tilauksia voidaan tarkastella ja niiden tilaa (uusi, käsittelyssä, toimitettu, peruttu) hallita.
+
+Projektista on tehty valmis nettikaupan pohja ilman oikeita tuotteita, sekä tietoturvaan on kiinnitetty huomiota (prepared statements, session-hallinta, roolit).
+
+Teknologiat:
+PHP, MySQL (PDO), JavaScript (Fetch API / AJAX), HTML, CSS</p>
+  </div>
+</div>
 
 
 
+<!-- Tietovisa -->
+<div class="col-md-4">
+  <div class="neu-box text-center h-100 project-card project-red">
+    <div>
+      <h4>Tietovisa</h4>
+      <p>PHP tietovisa, jossa täydet pisteet saaneille pokaali</p>
+    </div>
+    <br>
+    <!-- Painikkeet -->
+    <div class="button-group">
+      <a href="../tietovisa/tietovisa.php" class="btn">pelaa</a>
+      <a href="https://github.com/JoonasEskelinen" class="btn-git">GitHub</a>
+    </div>
+  </div>
+</div>
 
 
 
 <!-- portfolio -->
 <div class="col-md-4">
-  <div class="neu-box text-center h-100 ">
+  <div class="neu-box text-center h-100 project-card project-orange">
     <div>
       <h4>Portfolio sivut</h4>
       <p>Linkki näiden kyseisten sivujen GitHubiin</p><br>
     </div>
     <br>
     <!-- Painikkeet -->
-    <div class="mt-3">
+    <div class="button-group">
       <a href="#popup-portfolio" class="btn">Lue lisää</a>
       <a href="https://github.com/JoonasEskelinen/portfolio-sivut" target="_blank" class="btn-git">GitHub</a>
     </div>
@@ -175,102 +225,19 @@
 
 
 
-
-
-
-
-
-
-
-
-<!-- tyhjä 1 -->
+<!-- liikuntapäiväkirja -->
 <div class="col-md-4">
-  <div class="neu-box text-center h-100 ">
+  <div class="neu-box text-center h-100 project-card project-teal">
     <div>
-      <h4>Tulossa</h4>
-      <p>Tähän jotain</p>
+      <h4>Liikuntapäiväkirja</h4>
+      <p>Voit täyttää liikuntapäiväkirjaa nimimerkillä ja lukea päiväkirjan nimimerkin syöttämällä</p>
     </div>
     <br>
     <!-- Painikkeet -->
-    <div class="mt-3">
-      <a href="#popup-tyhja1" class="btn">Lue lisää</a>
+    <div class="button-group">
+      <a href="../liikuntapäiväkirja/liikuntapaivakirjaTaytto.php" class="btn">Täytä</a>
       <a href="https://github.com/JoonasEskelinen" class="btn-git">GitHub</a>
     </div>
-  </div>
-</div>
-
-<!-- avautuva teksti -->
-<div id="popup-tyhja1" class="overlay">
-  <div class="overlay-content neu-box">
-    <a href="#" class="btn">&times;</a>
-    <h3>Tulossa</h3>
-  </div>
-</div>
-
-
-
-
-
-
-
-
-
-
-
-<!-- tyhjä 2 -->
-<div class="col-md-4">
-  <div class="neu-box text-center h-100 ">
-    <div>
-      <h4>Tulossa</h4>
-      <p>Tähän jotain </p>
-    </div>
-    <br>
-    <!-- Painikkeet -->
-    <div class="mt-3">
-      <a href="#popup-tyhja2" class="btn">Lue lisää</a>
-      <a href="https://github.com/JoonasEskelinen" class="btn-git">GitHub</a>
-    </div>
-  </div>
-</div>
-
-<!-- avautuva teksti -->
-<div id="popup-tyhja2" class="overlay">
-  <div class="overlay-content neu-box">
-    <a href="#" class="btn">&times;</a>
-    <h3>Tulossa</h3>
-
-  </div>
-</div>
-
-
-
-
-
-
-
-
-
-<!-- tyhja3 -->
-<div class="col-md-4">
-  <div class="neu-box text-center h-100 ">
-    <div>
-      <h4>Tulossa</h4>
-      <p>Tulossa.</p>
-    </div>
-    <br>
-    <!-- Painikkeet -->
-    <div class="mt-3">
-      <a href="#popup-tyhja3" class="btn">Lue lisää</a>
-      <a href="https://github.com/JoonasEskelinen" class="btn-git">GitHub</a>
-    </div>
-  </div>
-</div>
-
-<!-- avautuva teksti -->
-<div id="popup-tyhja3" class="overlay">
-  <div class="overlay-content neu-box">
-    <a href="#" class="btn">&times;</a>
-    <h3>Tulossa</h3>
   </div>
 </div>
 
@@ -284,6 +251,12 @@
     <a href="https://github.com/JoonasEskelinen" class="btn-git">GitHub</a>
   </footer>
 
+<!-- Bootstrap JS-->
+<script
+  src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+  integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+  crossorigin="anonymous">
+</script>
 
 </body>
 </html>
