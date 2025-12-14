@@ -149,13 +149,16 @@ footer {
 /* PROFIILIKUVA ETUSIVULLA */
 
 .omakuva {
-  max-width: 250px;
+  max-width: 240px;
   opacity: 0.85;
 }
 
 @media (max-width: 600px) {
   .omakuva {
-    max-width: 180px;
+    max-width: 160px;    /* sopiva 40 % kolumniin */
+    max-height: 220px;
+    object-fit: cover;
+    object-position: top;
   }
 }
 
@@ -163,7 +166,7 @@ footer {
 
 .neu-box {
   background: rgba(0,0,0,0.3);
-  padding: 2rem;
+  padding: 1rem;
   border-radius: 12px;
   color: white;
 
@@ -456,30 +459,6 @@ button:hover,
     line-height: 1.4;
   }
 
-  /* estää boxien venymisen liikaa */
-  .col-md-4, 
-  .col-md-6, 
-  .col-md-8,
-  .col-md-5,
-  .col-md-7 {
-    max-width: 100%;
-    flex: 0 0 100%;      /* täysi leveys mobiilissa */
-  }
-
-  /* kuvat mobiilissa siisteiksi */
-  .lajikuvat,
-  .omakuva {
-    max-width: 100%;
-    height: auto;
-  }
-
-    /* pienempi profiilikuva mobiilissa */
-  .omakuva {
-    max-width: 100%;
-    width: 100%;
-    border-radius: 10px;
-  }
-
 
 }
 
@@ -517,42 +496,42 @@ button:hover,
   box-shadow: 0 0 35px rgba(163,49,144,.45);
 }
 .project-purple:hover {
-  box-shadow: 0 0 70px rgba(200,90,180,.85);
+  box-shadow: 0 0 90px rgba(200,90,180,.85);
 }
 
 .project-blue {
   box-shadow: 0 0 35px rgba(13,119,206,.45);
 }
 .project-blue:hover {
-  box-shadow: 0 0 70px rgba(80,170,255,.9);
+  box-shadow: 0 0 90px rgba(80,170,255,.9);
 }
 
 .project-green {
   box-shadow: 0 0 35px rgba(1,90,23,.5);
 }
 .project-green:hover {
-  box-shadow: 0 0 70px rgba(60,200,120,.9);
+  box-shadow: 0 0 90px rgba(60,200,120,.9);
 }
 
 .project-red {
   box-shadow: 0 0 35px rgba(156,29,29,.5);
 }
 .project-red:hover {
-  box-shadow: 0 0 35px rgba(255,80,80,.9);
+  box-shadow: 0 0 90px rgba(255,80,80,.9);
 }
 
 .project-orange {
   box-shadow: 0 0 35px rgba(233,161,5,.5);
 }
 .project-orange:hover {
-  box-shadow: 0 0 35px rgba(255,200,80,.95);
+  box-shadow: 0 0 90px rgba(255,200,80,.95);
 }
 
 .project-teal {
   box-shadow: 0 0 35px rgba(3,150,125,.5);
 }
 .project-teal:hover {
-  box-shadow: 0 0 70px rgba(80,230,200,.95);
+  box-shadow: 0 0 90px rgba(80,230,200,.95);
 }
 
 /* Painikealue aina alas */
@@ -616,34 +595,22 @@ button:hover,
   }
 }
 
-
-/* ========================================= */
-/* ETUSIVU – PROFIILIOSIO MOBIILISSA RINNAKKAIN */
-/* ========================================= */
-
+/* ETUSIVU: mobiilissa kuva + teksti vierekkäin ilman sivuttaisscrollia */
 @media (max-width: 600px) {
-
-  .etusivu-profile {
-    display: flex;
-    flex-direction: row;
-    gap: 1rem;
+  #etusivu.row {
+    --bs-gutter-x: 0.75rem; /* pienempi väli */
   }
 
-  .etusivu-profile > div:first-child {
-    flex: 0 0 40%;   /* kuva */
+  #etusivu .neu-box {
+    padding: 0.9rem;
   }
 
-  .etusivu-profile > div:last-child {
-    flex: 0 0 60%;   /* teksti */
-  }
-
-  .etusivu-profile .omakuva {
-    max-width: 100%;
-    height: auto;
-    border-radius: 12px;
-  }
-
-  .etusivu-profile .neu-box {
-    padding: 1rem;
+  #etusivu .omakuva {
+    width: 100%;
+    max-width: 160px;     /* pitää kuvan kurissa */
+    height: 210px;        /* tekee siitä "ylävartalo"-kortin */
+    object-fit: cover;
+    object-position: top;
+    display: block;
   }
 }
