@@ -608,7 +608,6 @@ button:hover,
   #etusivu .omakuva {
     width: 100%;
     max-width: 160px;     /* pitää kuvan kurissa */
-    height: 210px;        /* tekee siitä "ylävartalo"-kortin */
     object-fit: cover;
     object-position: top;
     display: block;
