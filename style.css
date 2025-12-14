@@ -607,7 +607,7 @@ button:hover,
 
   #etusivu .omakuva {
     width: 100%;
-    max-width: 160px;     /* pitää kuvan kurissa */
+    max-width: 250px;     /* pitää kuvan kurissa */
     object-fit: contain;
     object-position: top;
     display: block;
