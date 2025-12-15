@@ -493,6 +493,10 @@ button, .btn
   .hero-subtitle {
     font-size: 32px;
   }
+
+    .project-card {
+    box-shadow: 0 0 55px rgba(46,136,255,0.25);
+  }
 }
 
 
@@ -561,18 +565,18 @@ button, .btn
 
   #etusivu .omakuva {
     width: 100%;
-    max-width: 200px;   /* pysyy siistinä */
+    max-width: 220px;   /* pysyy siistinä */
     height: auto;       /* EI leikkaa */
     object-fit: contain;
     display: block;
   }
+
+    .project-card {
+    box-shadow: 0 0 55px rgba(46,136,255,0.25);
+  }
 }
 
-/* Sama efekti kuin hover */
-.scroll-hover {
-  transform: translateY(-12px);
-  box-shadow: 0 0 70px rgba(80,170,255,.9);
-}
+
 
 
 
