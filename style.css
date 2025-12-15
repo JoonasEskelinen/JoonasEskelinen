@@ -88,6 +88,7 @@ main {
   align-items: center;      /* keskelle vaakaan */
   text-align: center;
   padding: 0 1rem;
+  padding-top: 30px; /* desktop */
 }
 
 /* Otsikoiden värit ja hehkut */
@@ -153,14 +154,7 @@ footer {
   opacity: 0.85;
 }
 
-@media (max-width: 600px) {
-  .omakuva {
-    max-width: 160px;    /* sopiva 40 % kolumniin */
-    max-height: 220px;
-    object-fit: cover;
-    object-position: top;
-  }
-}
+
 
 /* NEU-BOXIT*/
 
@@ -188,11 +182,7 @@ footer {
   font-size: 18px;
 }
 
-@media (max-width: 600px) {
-  .neu-box p {
-    font-size: 16px;
-  }
-}
+
 
 /* tekstikenttien yhteinen tyyli */
 .neu-box input[type="text"],
@@ -311,45 +301,21 @@ a[href*="github.com"]:hover {
 
 /* YHTENÄINEN NAPPI */
 
-button,
-.btn {
-  position: relative;
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-
-  padding: 0.75rem 1.6rem;
-  border-radius: 999px;
-
-  background: black;
-  color: #ffffff !important;
-
-  font-weight: 600;
-  letter-spacing: 0.4px;
-  text-decoration: none;
-
-  border: 1.5px solid rgba(255,255,255,0.08);
-
-  box-shadow:
-    0 8px 20px rgba(91, 122, 223, 0.6),
-    inset 0 1px 0 rgba(255,255,255,0.08);
-
-  transition:
-    transform 0.25s ease,
-    box-shadow 0.25s ease,
-}
-
-/* kun hiiri viedään kohdalle */
-button:hover, 
-.btn:hover { 
-  transform: translateY(-3px); 
-  text-shadow:
-    0 0 10px #66aaff, 
-    0 0 25px #2e88ff, 
-    0 0 60px rgba(46,136,255,1); 
-  box-shadow: 12px 12px 20px #2e88ff, -12px -12px 20px #2e88ff;
-  background: #222; 
-}
+button, .btn 
+{ padding: 0.75rem 1.6rem; 
+  border-radius: 999px; 
+  background: black; color: #ffffff !important; 
+  font-weight: 600; 
+  border: 1.5px solid rgba(255,255,255,0.08); 
+  box-shadow: 0 10px 20px rgba(61, 94, 240, 0.6), inset 0 1px 0 rgba(255,255,255,0.08); 
+  transition: transform 0.25s ease, box-shadow 0.25s ease, } 
+  
+  /* kun hiiri viedään kohdalle */ 
+  button:hover, .btn:hover { 
+    transform: translateY(-3px); 
+    text-shadow: 0 0 10px #66aaff, 0 0 25px #2e88ff, 0 0 60px rgba(46,136,255,1); 
+    box-shadow: 12px 12px 20px #2e88ff, -12px -12px 20px #2e88ff; 
+    background: #222; }
 
 
 /* github buttonit */
@@ -359,19 +325,14 @@ button:hover,
   display: inline-flex;
   align-items: center;
   justify-content: center;
-
   padding: 0.75rem 1.6rem;
   border-radius: 999px;
-
   background: black;
   color: #ffffff !important;
-
   font-weight: 600;
   letter-spacing: 0.4px;
   text-decoration: none;
-
-  border: 3px solid rgba(255,255,255,0.08);
-
+  border: 1.5px solid rgba(255,255,255,0.08);
   box-shadow:
     0 8px 20px rgba(207, 39, 207, 0.6),
     inset 0 1px 0 rgba(255,255,255,0.08);
@@ -391,76 +352,6 @@ button:hover,
   background: #222; 
 }
 
-
-/*  säädetään toimimaan kaikilla laitteilla */
-
-@media (max-width: 992px) {
-
-  
-  .hero-content {
-    justify-content: flex-start;
-    padding-top: 20px;
-    padding-bottom: 20px;
-  }
-  
-  .hero-header {
-    height: 320px;      /* matalampi puhelimella */
-  }
-
-  .hero-title {
-    font-size: 60px;    /* pienemmät fontit */
-  }
-
-  .hero-subtitle {
-    font-size: 32px;
-  }
-}
-
-@media (max-width: 600px) {
-
-  
-  .hero-content {
-    padding-top: 15px;
-    padding-bottom: 20px;
-  }
-  
-  
-  .hero-header {
-    height: 260px;
-
-  }
-
-  .hero-title {
-    font-size: 46px;
-  }
-
-  .hero-subtitle {
-    font-size: 26px;
-  }
-}
-
-
-
-@media (max-width: 600px) {
-
-  /* neu-box pienemmäksi mobiilissa */
-  .neu-box {
-    padding: 1rem;
-    margin-bottom: 20px;
-    border-radius: 10px;
-  }
-
-  .neu-box h3, .neu-box h4 {
-    font-size: 24px;
-  }
-
-  .neu-box p {
-    font-size: 16px;
-    line-height: 1.4;
-  }
-
-
-}
 
 
 /*   PORTFOLIO PROJECT KORTIT    */
@@ -575,8 +466,41 @@ button:hover,
   color: #d6d6d6;
 }
 
-/* Mobiili */
+
+
+
+
+/*  säädetään toimimaan kaikilla laitteilla */
+
+/* TABLET & ALASPÄIN (≤992px) */
+
+@media (max-width: 992px) {
+
+  .hero-content {
+    justify-content: flex-start;
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+
+  .hero-header {
+    height: 320px;
+  }
+
+  .hero-title {
+    font-size: 60px;
+  }
+
+  .hero-subtitle {
+    font-size: 32px;
+  }
+}
+
+
+
+/* MOBIILI (≤768px) */
+
 @media (max-width: 768px) {
+
   .profile-info {
     grid-template-columns: 1fr;
   }
@@ -586,19 +510,49 @@ button:hover,
   }
 }
 
-/* hoverit pois mobiilissa */
-@media (hover: none) {
-  button:hover,
-  .btn:hover {
-    transform: none;
-    box-shadow: none;
-  }
-}
 
-/* ETUSIVU: mobiilissa kuva + teksti vierekkäin ilman sivuttaisscrollia */
+/* PIENI MOBIILI (≤600px) */
+
 @media (max-width: 600px) {
+
+  /* Hero */
+  .hero-content {
+    padding-top: 40px;
+    padding-bottom: 20px;
+  }
+
+  .hero-header {
+    height: 260px;
+  }
+
+  .hero-title {
+    font-size: 46px;
+  }
+
+  .hero-subtitle {
+    font-size: 26px;
+  }
+
+  /* Neu-box */
+  .neu-box {
+    padding: 1rem;
+    margin-bottom: 20px;
+    border-radius: 10px;
+  }
+
+  .neu-box h3,
+  .neu-box h4 {
+    font-size: 24px;
+  }
+
+  .neu-box p {
+    font-size: 16px;
+    line-height: 1.4;
+  }
+
+  /* ETUSIVU: kuva + teksti vierekkäin */
   #etusivu.row {
-    --bs-gutter-x: 0.75rem; /* pienempi väli */
+    --bs-gutter-x: 0.75rem;
   }
 
   #etusivu .neu-box {
@@ -607,10 +561,18 @@ button:hover,
 
   #etusivu .omakuva {
     width: 100%;
-    max-width: 250px;     /* pitää kuvan kurissa */
+    max-width: 200px;   /* pysyy siistinä */
+    height: auto;       /* EI leikkaa */
     object-fit: contain;
-    object-position: top;
     display: block;
-    height: auto;
   }
 }
+
+/* Sama efekti kuin hover */
+.scroll-hover {
+  transform: translateY(-12px);
+  box-shadow: 0 0 70px rgba(80,170,255,.9);
+}
+
+
+
