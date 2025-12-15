@@ -521,7 +521,7 @@ button, .btn
 
   /* Hero */
   .hero-content {
-    padding-top: 40px;
+    padding-top: 50px;
     padding-bottom: 20px;
   }
 
@@ -572,7 +572,7 @@ button, .btn
   }
 
     .project-card {
-    box-shadow: 0 0 55px rgba(46,136,255,0.25);
+    box-shadow: 0 0 100px rgba(46,136,255,0.25);
   }
 }
 
