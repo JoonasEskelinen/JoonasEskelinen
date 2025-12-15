@@ -565,8 +565,8 @@ button, .btn
 
   /* Hero */
   .hero-content {
-    padding-top: 100px;
-    padding-bottom: 20px;
+    padding-top: 80px;
+    padding-bottom: 30px;
   }
 
   .hero-header {
@@ -616,27 +616,27 @@ button, .btn
   }
 
     .project-purple {
-    box-shadow: 0 0 120px rgba(200,90,180,.55);
+    box-shadow: 0 0 90px rgba(200,90,180,.55);
   }
 
   .project-blue {
-    box-shadow: 0 0 120px rgba(80,170,255,.55);
+    box-shadow: 0 0 90px rgba(80,170,255,.55);
   }
 
   .project-green {
-    box-shadow: 0 0 120px rgba(60,200,120,.55);
+    box-shadow: 0 0 90px rgba(60,200,120,.55);
   }
 
   .project-red {
-    box-shadow: 0 0 120px rgba(255,80,80,.55);
+    box-shadow: 0 0 90px rgba(255,80,80,.55);
   }
 
   .project-orange {
-    box-shadow: 0 0 120px rgba(255,200,80,.55);
+    box-shadow: 0 0 90px rgba(255,200,80,.55);
   }
 
   .project-teal {
-    box-shadow: 0 0 120px rgba(80,230,200,.55);
+    box-shadow: 0 0 90px rgba(80,230,200,.55);
   }
 }
 
