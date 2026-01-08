@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+<html lang="fi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Joonas Eskelinen</title>
+
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- fontit -->
+    <link href="https://fonts.googleapis.com/css2?family=Allura&display=swap" rel="stylesheet">
+
+    <!-- css -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- Header -->
+<header class="hero-header text-white">
+  <!-- Navigaatiopalkki -->
+  <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+    <div class="container">
+      <!-- Etusivu painike -->
+      <a class="navbar-brand fw-bold" href="index.html">Etusivu</a>
+
+      <!-- Hampurilaisvalikko mobiililaitteille -->
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-bs-toggle="collapse"
+        data-bs-target="#navbarNav"
+        aria-controls="navbarNav"
+        aria-expanded="false"
+        aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <!-- Navigaatiolinkit -->
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+        <li class="nav-item"><a class="nav-link" href="profiili.html">Profiili</a></li>
+        <li class="nav-item"><a class="nav-link" href="koulutus.html">Koulutus & Työkokemus</a></li>
+        <li class="nav-item"><a class="nav-link" href="osaaminen.html">Osaaminen</a></li>
+        <li class="nav-item"><a class="nav-link" href="projektit.html">Projektit</a></li>
+        <li class="nav-item"><a class="nav-link" href="yhteydenotto.php">Ota yhteyttä</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero-sisältö -->
+  <div class="hero-content text-center d-flex flex-column justify-content-center align-items-center">
+    <div class="container">
+      <h1 class="hero-title">Projektit</h1>
+    </div>
+  </div>
+</header>
+
+
+<main class="container my-5 pt-hero-gap">
+  <div class="row g-4">
+    
+<!-- kävijälaskuri -->
+<div class="col-md-4">
+  <div class="neu-box text-center h-100 project-card project-purple">
+    <div>
+      <h4>Kävijälaskuri</h4>
+      <p>Raspberry Pi -pohjainen laskentajärjestelmä + mobiilisovellus.</p><br>
+      <img src="images/laskuri.webp" class="d-block w-100 rounded lajikuva" alt="Kuva4">
+    </div>
+    <br>
+    <!-- Painikkeet -->
+    <div class="button-group">
+      <a href="#popup-ravintola" class="btn">Lue lisää</a>
+    </div>
+  </div>
+</div>
+
+<!-- avautuva teksti -->
+<div id="popup-ravintola" class="overlay">
+  <div class="overlay-content neu-box">
+    <a href="#" class="btn popup-close">&times;</a>
+    <h3>RavintolaLaskuri</h3>
+    <p>
+      Raspberry Pi 5 -pohjainen kävijälaskentajärjestelmä, jota olen suunnitellut ravintolaympäristöön (soveltuu toki moneen muuhunkin ympäristöön),
+      joka laskee reaaliaikaisesti sisään- ja uloskäynnit ravintolaympäristössä ilman internetyhteyttä.
+      Projektiin kuuluu Flask-palvelin, liikkeentunnistukseen perustuva laskentaohjelma ja React Native -mobiilisovellus.
+    </p>
+    <p>
+      Projekti on vielä hieman kesken, Flask-palvelin toimii jo moitteettomasti, palvelin käynnistyy heti kun raspberry kytketään päälle ja mobiilisovellus
+      kommunikoi moitteetta python pohjaisen laskennan kanssa. Itse laskenta vaatii vielä hienosäätöä asetuksilla.
+    </p>
+    <p>
+      Käytetyt kielet<br>
+      📍Python -Laskenta ja serveri
+      📍TypeScript -Mobiilisovellus
+      📍JSON - Tiedontallennus
+    </p>
+  </div>
+</div>
+
+
+
+<!-- AivotSolmussa -->
+<div class="col-md-4">
+  <div class="neu-box text-center h-100 project-card project-green">
+    <div>
+      <h4>AivotSolmussa</h4>
+      <p>React Nativella / expolla rakennettu tietovisa peli androidille.</p><br><br><br>
+      <img src="images/logo_ominaisuus.png" class="d-block w-100" alt="Kuva4">
+    </div>
+    <br>
+    <!-- Painikkeet -->
+    <div class="button-group">
+      <a href="#popup-aivotsolmussa" class="btn">Lue lisää</a>
+    </div>
+  </div>
+</div>
+
+<!-- avautuva teksti -->
+<div id="popup-aivotsolmussa" class="overlay">
+  <div class="overlay-content neu-box">
+    <a href="#" class="btn popup-close">&times;</a>
+    <h3>Mobiilipeli</h3>
+    <p>
+      Aivot Solmussa on itse suunnittelemani moninpelattava sananselityspeli Android-laitteille. Sovellus on rakennettu React Native + Expo -teknologioilla ja se on suunniteltu paikalliseen seurapelaamiseen, ilman verkkoyhteyttä.
+      Pelissä yhdistyvät selkeä käyttöliittymä ja huolellisesti rakennettu pelilogiikka. Sovellus tukee useita pelimuotoja ja on optimoitu toimimaan luotettavasti erilaisilla Android-laitteilla. <br><br>
+      Sovelluksessa menossa suljettu testaus 14 käyttäjällä, jonka jälkeen julkaisu Play Storeen.
+    </p>
+    <p>
+🎮  <b>Pelimuodot</b><br>
+    <b>Paripeli</b><br>
+    -Joukkueet kilpailevat vuorotellen selittämällä ja arvaamalla sanoja<br>
+    -Ajastettu kierros, pisteytys ja kierrosten väliset yhteenvedot<br>
+    <b>Kolminpeli</b><br>
+    -Yksi selittää, kaksi arvaa<br>
+    -Selittäjä vaihtuu automaattisesti kierrosten välillä<br>
+    -Pisteitä saa sekä selittäjä että oikean vastauksen antanut arvaaja<br>
+    -Pelataan valittu määrä kierroksia ja voittaja on se jolla on eniten pisteitä.
+    </p>
+    <p>
+      Toteutus<br>
+      📍React Native / Expo
+      📍TypeScript
+      📍JSON - Tiedontallennus
+    </p>
+  </div>
+</div>
+
+
+
+
+
+
+
+
+
+<!-- budjettiapp -->
+<div class="col-md-4">
+  <div class="neu-box text-center h-100 project-card project-blue">
+    <div>
+      <h4>ArkiFlow</h4>
+      <p>Android-sovellus henkilökohtaiseen ja jaettuun taloudenhallintaan.</p><br>
+      <img src="images/arkiflow.webp" class="d-block w-100 rounded lajikuva" alt="Kuva4">
+    </div>
+    <br>
+    <!-- Painikkeet -->
+    <div class="button-group">
+      <a href="#popup-budjettiapp" class="btn">Lue lisää</a>
+    </div>
+  </div>
+</div>
+
+<!-- avautuva teksti -->
+<div id="popup-budjettiapp" class="overlay">
+  <div class="overlay-content neu-box">
+    <a href="#" class="btn popup-close">&times;</a>
+    <h3>Budjettiapp</h3>
+    <div class="popup-layout">
+      <!-- screenshot -->
+      <img
+        src="images/screenshotarkiflow.png"
+        alt="Budjettiapp näkymä"
+        class="popup-image">
+    <!-- esittelyteksti -->
+      <div class="popup-text">
+        <p>
+          Sovelluksessa voi seurata menoja ja tuloja, hallita kategorioita,
+          luoda ryhmiä sekä jakaa ostoslistoja ja kulutietoja reaaliaikaisesti.
+          Toteutettu React Nativella ja Firebase-palveluilla.
+        </p>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+
+
+<!-- nettikauppa  -->
+<div class="col-md-4">
+  <div class="neu-box text-center h-100 project-card project-green">
+    <div>
+      <h4>Nettikauppa</h4>
+      <p>Verkkokauppajärjestelmä (PHP, MySQL, JavaScript)</p>
+    </div>
+    <br>
+    <!-- Painikkeet -->
+    <div class="button-group">
+      <a href="#popup-tyhja2" class="btn">Lue lisää</a>
+     <a href="projektit/verkkokauppa/index.php" class="btn" target="_blank">
+    Avaa nettikauppa
+</a>
+
+    </div>
+  </div>
+</div>
+
+<!-- avautuva teksti -->
+<div id="popup-tyhja2" class="overlay">
+  <div class="overlay-content neu-box">
+    <a href="#" class="btn popup-close">&times;</a>
+    <h3>Nettikauppa</h3>
+      <p>
+      Toteutin verkkokauppajärjestelmän PHP:llä ja MySQL-tietokannalla. Sovellus sisältää käyttäjähallinnan, ostoskorin, kassatoiminnon sekä erillisen admin-näkymän tilausten hallintaan.
+      </p>
+
+      <p>
+      Järjestelmässä on käyttöoikeusmalli (käyttäjä / admin), AJAX-pohjainen ostoskori ilman sivun uudelleenlatauksia sekä tilausprosessi, joka tallentaa tilaukset tietokantaan.
+      Admin-näkymässä tilauksia voidaan tarkastella ja niiden tilaa (uusi, käsittelyssä, toimitettu, peruttu) päivittää.
+      </p>
+
+      <p>
+      Projekti on toteutettu valmiiksi verkkokaupan pohjaksi ilman oikeita tuotteita tai maksuliikennettä.
+      Tietoturvaan on kiinnitetty huomiota käyttämällä prepared statements -kyselyitä, session-hallintaa ja roolipohjaisia käyttöoikeuksia.
+      </p>
+
+      <p>
+      <strong>Teknologiat:</strong><br>
+      PHP, MySQL (PDO), JavaScript (Fetch API / AJAX), HTML, CSS
+      </p>
+  </div>
+</div>
+
+
+
+<!-- Tietovisa -->
+<div class="col-md-4">
+  <div class="neu-box text-center h-100 project-card project-red">
+    <div>
+      <h4>Tietovisa</h4>
+      <p>PHP tietovisa, jossa täydet pisteet saaneille pokaali</p>
+    </div>
+    <br>
+    <!-- Painikkeet -->
+    <div class="button-group">
+      <a href="projektit/tietovisa/tietovisa.php" target="_blank" class="btn">pelaa</a>
+      <a href="https://github.com/JoonasEskelinen/tietovisa" target="_blank" class="btn-git">GitHub</a>
+    </div>
+  </div>
+</div>
+
+
+
+<!-- portfolio -->
+<div class="col-md-4">
+  <div class="neu-box text-center h-100 project-card project-orange">
+    <div>
+      <h4>Portfolio sivut</h4>
+      <p>Linkki näiden kyseisten sivujen GitHubiin</p><br>
+    </div>
+    <br>
+    <!-- Painikkeet -->
+    <div class="button-group">
+      <a href="#popup-portfolio"  class="btn">Lue lisää</a>
+      <a href="https://github.com/JoonasEskelinen/JoonasEskelinen" target="_blank" class="btn-git">GitHub</a>
+    </div>
+  </div>
+</div>
+
+<!-- avautuva teksti -->
+<div id="popup-portfolio" class="overlay">
+  <div class="overlay-content neu-box">
+    <a href="#" class="btn popup-close">&times;</a>
+    <h3>Portfolio sivut</h3>
+    <p>
+      Omat portfolio sivuni. Koulun aikana tehty, päivittyvät sitä mukaan kun kehityn alalla ja uusia projekteja valmistuu.
+    </p>
+  </div>
+</div>
+
+
+
+<!-- liikuntapäiväkirja -->
+<div class="col-md-4">
+  <div class="neu-box text-center h-100 project-card project-purple">
+    <div>
+      <h4>Liikuntapäiväkirja</h4>
+      <p>Voit täyttää liikuntapäiväkirjaa nimimerkillä ja lukea päiväkirjan nimimerkin syöttämällä</p>
+    </div>
+    <br>
+    <!-- Painikkeet -->
+    <div class="button-group">
+      <a href="projektit/liikuntapäiväkirja/liikuntapaivakirja.php" target="_blank" class="btn">Täytä</a>
+      <a href="https://github.com/JoonasEskelinen/liikuntapaivakirja" target="_blank" class="btn-git">GitHub</a>
+    </div>
+  </div>
+</div>
+
+
+
+
+<!-- autotietokanta  -->
+<div class="col-md-4">
+  <div class="neu-box text-center h-100 project-card project-green">
+    <div>
+      <h4>Autotietokanta</h4>
+      <p>Koulun SQL kurssilla tehty Autotietokanta</p>
+    </div>
+    <br>
+    <!-- Painikkeet -->
+    <div class="button-group">
+      <a href="#popup-autotietokanta" class="btn">Lue lisää</a>
+     <a href="projektit/autotietokanta/index.php" class="btn" target="_blank">
+    Avaa nettikauppa
+</a>
+
+    </div>
+  </div>
+</div>
+
+<!-- avautuva teksti -->
+<div id="popup-autotietokanta" class="overlay">
+  <div class="overlay-content neu-box">
+    <a href="#" class="btn popup-close">&times;</a>
+    <h3>Autotietokanta – PHP & SQL -harjoitustyö</h3>
+      <p>
+        Tämä projekti on harjoitustyö, jossa toteutin yksinkertaisen autotietokannan käyttäen PHP:tä, SQL-tietokantaa ja 
+        REST-tyyppistä APIa. Sovellus hakee, näyttää, lisää, muokkaa ja poistaa autotietoja tietokannasta selainkäyttöliittymän kautta.
+      </p>
+  </div>
+</div>
+
+
+
+<!-- Tulossa -->
+<div class="col-md-4">
+  <div class="neu-box text-center h-100 project-card project-red">
+    <div>
+      <h4>Tulossa</h4>
+      <p>Seuraavia projekteja tulossa pian..</p>
+    </div>
+    <br>
+    <!-- Painikkeet -->
+    <div class="button-group">
+      <a href="projektit/liikuntapäiväkirja/liikuntapaivakirja.php" target="_blank" class="btn">Täytä</a>
+      <a href="https://github.com/JoonasEskelinen/liikuntapaivakirja" target="_blank" class="btn-git">GitHub</a>
+    </div>
+  </div>
+</div>
+
+</div>
+</main>
+
+<!-- footer -->
+  <footer class="bg-black text-white text-center py-4">
+    <p class="mb-0">© 2025 Joonas Eskelinen</p><br>
+  <a href="mailto:eskelinen51@gmail.com" class="btn-linkedin">Sähköposti</a>
+  <a href="https://github.com/JoonasEskelinen" class="btn-gitfooter">GitHub</a>
+  <a href="https://www.linkedin.com/in/joonas-eskelinen-70633b3a4" class="btn-linkedin">LinkedIn</a>
+  </footer>
+
+<!-- Bootstrap JS-->
+<script
+  src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+  integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+  crossorigin="anonymous">
+</script>
+
+
+<!-- scripti popupin sammuttamiseen, jotta sivu ei pomppaa ylös-->
+<script>
+let scrollPosition = 0;
+
+/* Tallenna scroll-kohta ennen popupin avausta */
+document.querySelectorAll('a[href^="#popup"]').forEach(link => {
+  link.addEventListener('click', () => {
+    scrollPosition = window.scrollY;
+  });
+});
+
+/* Sulje popup oikein ilman scroll-hyppyä */
+document.querySelectorAll('.popup-close').forEach(btn => {
+  btn.addEventListener('click', (e) => {
+    e.preventDefault();
+
+    // Poista hash -> :target katoaa -> popup sulkeutuu
+    location.hash = '';
+
+    // Palauta scroll seuraavassa event loopissa
+    setTimeout(() => {
+      window.scrollTo(0, scrollPosition);
+    }, 0);
+  });
+});
+</script>
+
+</body>
+</html>
