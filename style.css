@@ -778,13 +778,12 @@ button:hover, .btn:hover {
   /* Profiilikuva mobiilissa (hero-osion alle) */
   .omakuva-wrap {
     position: relative;
-    top: 340px; /* hero-header (320px) + marginaali */
-    left: 15px;
+    margin: -40px 0 20px 15px; /* ylös + vasemmalle */
     width: 60px;
     height: 60px;
     border-radius: 50%;
     overflow: hidden;
-    z-index: 1100; /* varmistaa että ei jää navbarin alle */
+    z-index: 2;
   }
 
   /* Bootstrapin kolumnien täysi leveys */
@@ -822,15 +821,13 @@ button:hover, .btn:hover {
   /* Profiilikuva pienessä mobiilissa */
   .omakuva-wrap {
     position: relative;
-    top: 200px; /* hero-header (260px) + marginaali */
-    left: 15px;
+    margin: -30px 0 16px 15px;
     width: 90px;
     height: 90px;
     border-radius: 50%;
     overflow: hidden;
-    z-index: 1100;
+    z-index: 2;
   }
-
   /* Bootstrapin kolumnien täysi leveys */
   #etusivu .col-8,
   #etusivu .col-md-7 {
