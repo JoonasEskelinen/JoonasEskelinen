@@ -778,9 +778,9 @@ button:hover, .btn:hover {
   /* Profiilikuva mobiilissa (hero-osion alle) */
   .omakuva-wrap {
     position: relative;
-    margin: -40px 0 20px 15px; /* ylös + vasemmalle */
-    width: 60px;
-    height: 60px;
+    margin: -60px 0 20px 10px; /* ylös + vasemmalle */
+    width: 80px;
+    height: 80px;
     border-radius: 50%;
     overflow: hidden;
     z-index: 2;
