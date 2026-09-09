@@ -15,7 +15,7 @@
 
 ### 👇 Tutustu projekteihini, osaamiseeni ja tekemiseeni
 
-**[🚀 VILKAISE PROJEKTEJANI →](https://joonaseskelinen.com/projektit)**
+**[🚀 VILKAISE PROJEKTEJANI →]([https://joonaseskelinen.com/projektit](https://joonaseskelinen.com/projektit.php))**
 
 ---
 
