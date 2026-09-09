@@ -1,5 +1,5 @@
 ## Helou! 👋
-
+Olen Joonas
 Developer student  
 📍 Kuopio, Finland
 
