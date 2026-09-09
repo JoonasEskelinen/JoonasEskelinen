@@ -5,4 +5,4 @@ Developer student
 
 ## 🌐 Portfolio
 
-👉 **[KATSO PORTFOLIONI →](https://joonaseskelinen.fi)**
+👉 **[KATSO PORTFOLIONI →](https://joonaseskelinen.com)**
