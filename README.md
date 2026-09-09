@@ -1,6 +1,6 @@
-# 👋 Hei, olen Joonas!
+# Hei, olen Joonas!
 
-### 💻 Ohjelmistoasentaja-opiskelija
+### Ohjelmistoasentaja-opiskelija
 📍 Kuopio, Finland
 
 ---
@@ -13,19 +13,19 @@
 
 <br>
 
-### 👇 Tutustu projekteihini, osaamiseeni ja tekemiseeni
+### Tutustu projekteihini, osaamiseeni ja tekemiseeni
 
-**[🚀 VILKAISE PROJEKTEJANI →](https://joonaseskelinen.com/projektit.php)**
+**[VILKAISE PROJEKTEJANI →](https://joonaseskelinen.com/projektit.php)**
 
 ---
 
-## 🛠️ Tällä hetkellä
+## Tällä hetkellä
 
 Opiskelen ohjelmistoalaa ja kehitän jatkuvasti osaamistani 
 ohjelmistokehityksen sekä web-teknologioiden parissa.
 
 ---
 
-### 📫 Yhteystiedot
+### Yhteystiedot
 
 🌐 **Portfolio:** [joonaseskelinen.com](https://joonaseskelinen.com)
